@@ -21,7 +21,7 @@
                 <p class="text-gray-500 text-sm mb-4">Membantu masyarakat yang membutuhkan biaya pengobatan dan kesehatan.</p>
                 <div class="mb-3">
                     <div class="flex justify-between text-sm text-gray-600 mb-1">
-                        <span>Rp 12.500.000</span><span>70%</span>
+                        <span>Rp 12.520.000</span><span>70%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2">
                         <div class="bg-green-500 h-2 rounded-full" style="width: 70%"></div>
