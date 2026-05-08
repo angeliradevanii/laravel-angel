@@ -10,6 +10,7 @@
         <nav class="hidden md:flex items-center gap-8">
             <a href="{{ route('home') }}" class="text-gray-700 font-medium hover:text-green-600 transition-colors {{ request()->routeIs('home') ? 'text-green-600 font-semibold' : '' }}">Home</a>
             <a href="{{ route('donasi') }}" class="text-gray-700 font-medium hover:text-green-600 transition-colors {{ request()->routeIs('donasi') ? 'text-green-600 font-semibold' : '' }}">Donasi</a>
+            <a href="{{ route('campaign.index') }}" class="text-gray-700 font-medium hover:text-green-600 transition-colors {{ request()->routeIs('campaign.*') ? 'text-green-600 font-semibold' : '' }}">Campaign</a>
             <a href="{{ route('profil') }}" class="text-gray-700 font-medium hover:text-green-600 transition-colors {{ request()->routeIs('profil') ? 'text-green-600 font-semibold' : '' }}">Profil</a>
             <a href="{{ route('kontak') }}" class="text-gray-700 font-medium hover:text-green-600 transition-colors {{ request()->routeIs('kontak') ? 'text-green-600 font-semibold' : '' }}">Kontak</a>
         </nav>
