@@ -1,0 +1,24 @@
+CARA MENJALANKAN PROJECT DONASIKU ORM
+
+1. Extract ZIP ini.
+2. Buka terminal di folder project.
+3. Jalankan:
+   composer install
+   npm install
+   cp .env.example .env
+   php artisan key:generate
+   php artisan migrate --seed
+   npm run dev
+
+4. Buka terminal kedua, lalu jalankan:
+   php artisan serve
+
+5. Akses halaman:
+   http://127.0.0.1:8000
+   http://127.0.0.1:8000/campaign
+   http://127.0.0.1:8000/donasi
+
+Catatan:
+- Tugas ORM sudah memakai model Campaign, CampaignAccount, Category, dan Donation.
+- Relasi yang dipakai: One-to-One, One-to-Many, dan Many-to-Many.
+- View donation dan controller donasi sudah diperbarui untuk menyimpan data Donation.

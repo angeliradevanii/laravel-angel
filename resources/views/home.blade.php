@@ -14,7 +14,7 @@
     </p>
 
     <div class="flex gap-4 justify-center flex-wrap">
-        <a href="#donasi" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-full transition-colors shadow-md">
+        <a href="{{ route('donasi') }}" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-full transition-colors shadow-md">
             Mulai Donasi
         </a>
         <a href="#tentang" class="border border-green-500 text-green-600 hover:bg-green-50 font-semibold px-8 py-3 rounded-full transition-colors">
@@ -48,7 +48,7 @@
                         <div class="bg-green-500 h-2 rounded-full" style="width: 70%"></div>
                     </div>
                 </div>
-                <a href="#" class="block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-xl transition-colors text-sm">
+                <a href="{{ route('donasi') }}" class="block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-xl transition-colors text-sm">
                     Donasi Sekarang
                 </a>
             </div>
@@ -71,7 +71,7 @@
                         <div class="bg-blue-500 h-2 rounded-full" style="width: 55%"></div>
                     </div>
                 </div>
-                <a href="#" class="block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-xl transition-colors text-sm">
+                <a href="{{ route('donasi') }}" class="block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-xl transition-colors text-sm">
                     Donasi Sekarang
                 </a>
             </div>
@@ -94,7 +94,7 @@
                         <div class="bg-orange-500 h-2 rounded-full" style="width: 38%"></div>
                     </div>
                 </div>
-                <a href="#" class="block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-xl transition-colors text-sm">
+                <a href="{{ route('donasi') }}" class="block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-xl transition-colors text-sm">
                     Donasi Sekarang
                 </a>
             </div>
