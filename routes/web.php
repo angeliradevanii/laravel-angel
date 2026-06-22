@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\ProfilController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DocumentationFileController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/profil', [ProfilController::class, 'index'])->name('profil');
@@ -23,3 +24,7 @@ Route::post('/campaign', [CampaignController::class, 'store'])->name('campaign.s
 Route::get('/campaign/{campaign}/edit', [CampaignController::class, 'edit'])->name('campaign.edit');
 Route::put('/campaign/{campaign}', [CampaignController::class, 'update'])->name('campaign.update');
 Route::delete('/campaign/{campaign}', [CampaignController::class, 'destroy'])->name('campaign.destroy');
+
+Route::get('/documentations', [DocumentationFileController::class, 'index'])->name('documentations.index');
+
+Route::post('/documentations', [DocumentationFileController::class, 'store'])->name('documentations.store');
