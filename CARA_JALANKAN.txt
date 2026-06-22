@@ -1,24 +1,42 @@
-CARA MENJALANKAN PROJECT DONASIKU ORM
+CARA MENJALANKAN PROJECT DONASIKU + MANAJEMEN FILE
 
 1. Extract ZIP ini.
 2. Buka terminal di folder project.
-3. Jalankan:
+3. Jalankan perintah berikut satu per satu:
+
    composer install
    npm install
+
+   Windows CMD:
+   copy .env.example .env
+
+   PowerShell / Git Bash:
    cp .env.example .env
+
    php artisan key:generate
    php artisan migrate --seed
-   npm run dev
+   php artisan storage:link
+   npm run build
 
-4. Buka terminal kedua, lalu jalankan:
+4. Jalankan server:
+
    php artisan serve
 
 5. Akses halaman:
+
    http://127.0.0.1:8000
    http://127.0.0.1:8000/campaign
    http://127.0.0.1:8000/donasi
+   http://127.0.0.1:8000/documentations
 
-Catatan:
-- Tugas ORM sudah memakai model Campaign, CampaignAccount, Category, dan Donation.
+CATATAN PENTING MANAJEMEN FILE:
+- Perintah "php artisan storage:link" wajib dijalankan supaya gambar dan PDF dapat tampil di browser.
+- Format upload: PDF, DOC, DOCX, PNG, JPG, dan JPEG.
+- Ukuran maksimal file: 5 MB.
+- Setelah memilih file, preview sementara akan tampil sebelum tombol unggah ditekan.
+- Setelah berhasil diunggah, file muncul di galeri bagian bawah dan dapat dipilih untuk preview.
+- Gambar dapat dilihat langsung, PDF dapat dipreview di halaman, sedangkan DOC/DOCX dapat diunduh.
+
+Catatan project:
+- Tugas ORM memakai model Campaign, CampaignAccount, Category, dan Donation.
 - Relasi yang dipakai: One-to-One, One-to-Many, dan Many-to-Many.
-- View donation dan controller donasi sudah diperbarui untuk menyimpan data Donation.

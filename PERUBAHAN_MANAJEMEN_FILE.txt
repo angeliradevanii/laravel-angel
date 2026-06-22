@@ -1,0 +1,24 @@
+FITUR MANAJEMEN FILE YANG SUDAH DISELESAIKAN
+
+1. Upload file dengan validasi PDF, DOC, DOCX, PNG, JPG, dan JPEG maksimal 5 MB.
+2. Preview file langsung setelah dipilih, sebelum diunggah.
+3. Semua file dan gambar yang masuk database tampil pada galeri di bawah form.
+4. Kartu file dapat dipilih dan diberi tanda centang hijau.
+5. File terbaru otomatis menjadi file terpilih.
+6. Gambar tampil dalam preview ukuran besar.
+7. PDF dapat dipreview langsung menggunakan iframe.
+8. DOC dan DOCX diberikan tombol unduh karena browser tidak dapat mempreview file Word secara langsung.
+9. Tersedia tombol unduh dan hapus file.
+10. Saat data dihapus, file fisik di storage juga ikut dihapus.
+11. Menu Dokumentasi ditambahkan ke navbar.
+12. Route download dan delete sudah ditambahkan.
+13. Package-lock.json sudah diperbaiki dan npm ci berhasil diuji.
+14. Asset Tailwind/Vite sudah dibuild ke folder public/build.
+15. File database/database.sqlite kosong sudah disertakan agar konfigurasi SQLite bawaan dapat langsung digunakan.
+
+HALAMAN FITUR:
+http://127.0.0.1:8000/documentations
+
+PERINTAH WAJIB:
+php artisan migrate
+php artisan storage:link

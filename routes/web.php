@@ -25,6 +25,8 @@ Route::get('/campaign/{campaign}/edit', [CampaignController::class, 'edit'])->na
 Route::put('/campaign/{campaign}', [CampaignController::class, 'update'])->name('campaign.update');
 Route::delete('/campaign/{campaign}', [CampaignController::class, 'destroy'])->name('campaign.destroy');
 
+// Manajemen file dan gambar
 Route::get('/documentations', [DocumentationFileController::class, 'index'])->name('documentations.index');
-
 Route::post('/documentations', [DocumentationFileController::class, 'store'])->name('documentations.store');
+Route::get('/documentations/{documentationFile}/download', [DocumentationFileController::class, 'download'])->name('documentations.download');
+Route::delete('/documentations/{documentationFile}', [DocumentationFileController::class, 'destroy'])->name('documentations.destroy');
