@@ -44,7 +44,6 @@ class DonasiController extends Controller
 
             // Update total donasi terkumpul pada campaign setelah donasi dibuat
             $campaign = Campaign::findOrFail($donation->campaign_id);
-            $campaign->increment('collected_donation', $donation->amount);
         });
 
         return redirect()->route('donasi')->with('success', 'Terima kasih, donasi berhasil disimpan!');
